@@ -103,6 +103,12 @@ a {
 /* #region main */
 /* #region hero */
 .page-hero {
+  max-width: 1440px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-bg.jpg);
   background-color: #2e2f42;
   padding: 188px 0;
 }
@@ -162,6 +168,14 @@ a {
 .list-descr {
   flex-basis: calc((100% - 72px) / 4);
 }
+.border-descr {
+  background-color: #f4f4fd;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  margin-bottom: 8px;
+}
 .name-descr {
   font-weight: 500;
   font-size: 20px;
@@ -220,6 +234,22 @@ a {
   letter-spacing: 0.02em;
   color: #434455;
   text-align: center;
+  margin-bottom: 8px;
+}
+.cont-icons {
+  max-width: 232px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 32px;
+}
+.list-icons {
+  display: flex;
+  gap: 24px;
+}
+.item-icon {
+  width: 40px;
+  height: 40px;
+  display: block;
 }
 /* #endregion team */
 /* #region portf */
