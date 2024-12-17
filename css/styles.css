@@ -102,12 +102,12 @@ a {
 .list-contact:hover {
   color: #404bbf;
 }
-.list-nav-overflow {
+.menu-nav li:nth-child(1) {
   position: relative;
   color: #404bbf;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.list-nav-overflow::after {
+.menu-nav li:nth-child(1)::after {
   content: '';
   width: 100%;
   position: absolute;
