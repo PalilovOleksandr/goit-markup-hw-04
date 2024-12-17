@@ -39,6 +39,8 @@ a {
 /* #region header */
 .page-nav {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .nav-cont {
   display: flex;
@@ -74,6 +76,7 @@ a {
   color: #2e2f42;
   padding: 24px 0;
   display: block;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .list-nav:hover,
 .list-nav:focus {
@@ -89,6 +92,7 @@ a {
   gap: 40px;
 }
 .list-contact {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -98,12 +102,29 @@ a {
 .list-contact:hover {
   color: #404bbf;
 }
+.list-nav-overflow {
+  position: relative;
+  color: #404bbf;
+}
+.list-nav-overflow::after {
+  content: '';
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+}
 
 /* #endregion header */
 /* #region main */
 /* #region hero */
 .page-hero {
   max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -140,6 +161,7 @@ a {
 }
 .hero-button:hover,
 .hero-button:focus {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #404bbf;
 }
 /* #endregion hero */
