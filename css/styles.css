@@ -418,7 +418,8 @@ li:hover .overlay-text {
   align-items: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.item-link-footer:hover {
+.item-link-footer:hover,
+.item-link-footer:focus {
   background-color: #31d0aa;
 }
 .icon-footer {
