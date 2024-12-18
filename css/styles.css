@@ -92,7 +92,7 @@ a {
   gap: 40px;
 }
 .list-contact {
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -105,7 +105,7 @@ a {
 .menu-nav li:nth-child(1) {
   position: relative;
   color: #404bbf;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-nav li:nth-child(1)::after {
   content: '';
